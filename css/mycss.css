@@ -1,0 +1,69 @@
+*{padding:0;margin: 0;list-style: none;}
+img {
+	width:500px;
+}
+.banner {
+	position: relative;
+	margin: 100px auto;
+	border: 1px solid #333;
+	width: 500px;
+	height: 281px;
+	overflow: hidden;
+}
+/*添加定位，js控制*/
+.banner .img {
+	width: 3000px;
+	position: absolute;
+	left:0;
+	top: 0;
+}
+.banner .img li {
+	float: left;
+}
+/*num定位*/
+.banner .num{
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	left: 0;
+	text-align: center;
+	/*除默认空格*/
+	font-size: 0;
+}
+/*num添加圆角并在一排显示*/
+.banner .num li {
+	width: 15px;
+	height: 15px;
+	background-color: #888;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+/*圆点选中样式*/
+.banner .num li.on {
+	background-color:#a00;
+}
+
+.banner .btn{
+	width: 30px;
+	height: 50px;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 33px;
+	font-family: 'simsun';
+	display: none;
+}
+/*移入显示按钮*/
+.banner:hover .btn{
+	display: block;
+}
+.banner .btn-l {left: 0}
+.banner .btn-r {right: 0}
